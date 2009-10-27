@@ -32,12 +32,12 @@ module WCAPI
       nodes.each { |item |
          _title = xpath_get_text(xpath_first(item, "datafield[@tag='245']/subfield[@code='a']")) 
          if xpath_first(item, "datafield[@tag='1*']") != nil 
-            xpath_all(item, "datafield[@tag='1*']/sufield[@code='a']").each { |i|
+            xpath_all(item, "datafield[@tag='1*']/subfield[@code='a']").each { |i|
               _author.push(xpath_get_text(i))
            }
          end
          if xpath_first(item, "datafield[@tag='7*']" ) != nil  
-            xpath_all(item, "datafield[@tag='7*']/sufield[@code='a']").each { |i|
+            xpath_all(item, "datafield[@tag='7*']/subfield[@code='a']").each { |i|
               _author.push(xpath_get_text(i))
            }
          end
