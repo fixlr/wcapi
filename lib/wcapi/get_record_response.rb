@@ -29,10 +29,8 @@ module WCAPI
       end
 
       nodes = xpath_all(doc, "/record")
-      puts "NODE Count: " + nodes.length.to_s
       nodes.each { |item |
          _title = xpath_get_text(xpath_first(item, "datafield[@tag='245']/subfield[@code='a']")) 
-	 puts "TITLE: " + _title
          if xpath_first(item, "datafield[@tag='1*']") != nil 
             xpath_all(item, "datafield[@tag='1*']/sufield[@code='a']").each { |i|
               _author.push(xpath_get_text(i))
