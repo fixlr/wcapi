@@ -11,17 +11,8 @@ module WCAPI
 
    def parse_marcxml(xml)
      @header = {}
-      _title = ""
-      #this is an array
-      _author = Array.new()
-      _link = ""
-      _id = ""
-      _citation = ""
-      _summary = ""
       _xml = xml
-      _rechash = {}
       _records = Array.new()
-      _x = 0
 
       xml = xml.gsub('<?xml-stylesheet type="text/xsl" href="/webservices/catalog/xsl/searchRetrieveResponse.xsl"?>', "")
 
@@ -40,6 +31,16 @@ module WCAPI
  
       nodes = xpath_all(doc, "//records/record/recordData/record")
       nodes.each { |item |
+
+         # Set some defaults for each node
+         _title  = ""
+         _author = Array.new()
+         _link   = ""
+         _id     = ""
+         _citation = ""
+         _summary  = ""
+         _rechash = {}
+
          _title = xpath_get_text(xpath_first(item, "datafield[@tag='245']/subfield[@code='a']")) 
          if xpath_first(item, "datafield[@tag='1*']") != nil 
             xpath_all(item, "datafield[@tag='1*']/subfield[@code='a']").each { |i|
