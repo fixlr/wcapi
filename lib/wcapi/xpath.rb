@@ -12,33 +12,33 @@ module WCAPI
       _citation = ""
       _summary  = ""
 
-      _title = xpath_get_text(xpath_first(item, "datafield[@tag='245']/subfield[@code='a']")) 
+      _title = xpath_get_text(xpath_first(xml, "datafield[@tag='245']/subfield[@code='a']")) 
 
-      if xpath_first(item, "datafield[@tag='100' or @tag='110' or @tag='111']") != nil 
-        xpath_all(item, "datafield[@tag='100' or @tag='110' or @tag='111']/subfield[@code='a']").each do |i|
+      if xpath_first(xml, "datafield[@tag='100' or @tag='110' or @tag='111']") != nil 
+        xpath_all(xml, "datafield[@tag='100' or @tag='110' or @tag='111']/subfield[@code='a']").each do |i|
           _author.push(xpath_get_text(i))
         end
       end
 
-      if xpath_first(item, "datafield[@tag='700' or @tag='710' or @tag='711']" ) != nil  
-        xpath_all(item, "datafield[@tag='700' or @tag='710' or @tag='711']/subfield[@code='a']").each end |i|
+      if xpath_first(xml, "datafield[@tag='700' or @tag='710' or @tag='711']" ) != nil  
+        xpath_all(xml, "datafield[@tag='700' or @tag='710' or @tag='711']/subfield[@code='a']").each do |i|
           _author.push(xpath_get_text(i))
         end
       end
 
-      if xpath_first(item, "controlfield[@tag='001']") != nil 
-        _id   = xpath_get_text(xpath_first(item, "controlfield[@tag='001']")) 
+      if xpath_first(xml, "controlfield[@tag='001']") != nil 
+        _id   = xpath_get_text(xpath_first(xml, "controlfield[@tag='001']")) 
         _link = 'http://www.worldcat.org/oclc/' + _id.to_s
       end
 
-      if xpath_first(item, "datafield[@tag='520']") != nil
-        _summary = xpath_get_text(xpath_first(item, "datafield[@tag='520']/subfield[@code='a']"))
-      elsif xpath_first(item, "datafield[@tag='500']") != nil
-        _summary = xpath_get_text(xpath_first(item, "datafield[@tag='500']/subfield[@code='a']"))
+      if xpath_first(xml, "datafield[@tag='520']") != nil
+        _summary = xpath_get_text(xpath_first(xml, "datafield[@tag='520']/subfield[@code='a']"))
+      elsif xpath_first(xml, "datafield[@tag='500']") != nil
+        _summary = xpath_get_text(xpath_first(xml, "datafield[@tag='500']/subfield[@code='a']"))
       end
 
       return {:title => _title, :author => _author, :link => _link, :id => _id, 
-          :citation => _citation, :summary => _summary, :xml => item.to_s }      
+          :citation => _citation, :summary => _summary, :xml => xml }      
     end
     
     # get all matching nodes
