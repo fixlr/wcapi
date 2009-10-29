@@ -3,17 +3,14 @@ module WCAPI
     include WCAPI::XPath
     attr_accessor :header, :records, :raw
 
-    def initialize(doc)
-      #super doc
+    def initialize(xml)
       @raw = doc
-      parse_marcxml(doc)
+      @records = []
+      @header  = {}
+      parse_marcxml(xml)
     end
 
    def parse_marcxml(xml)
-     @header = {}
-      _xml = xml
-      _records = Array.new()
-
       xml = xml.gsub('<?xml-stylesheet type="text/xsl" href="/webservices/catalog/xsl/searchRetrieveResponse.xsl"?>', "")
 
       begin
@@ -30,47 +27,9 @@ module WCAPI
       @header["startRecord"] = xpath_get_text(xpath_first(doc, "//startRecord"))
  
       nodes = xpath_all(doc, "//records/record/recordData/record")
-      nodes.each { |item |
-
-         # Set some defaults for each node
-         _title  = ""
-         _author = Array.new()
-         _link   = ""
-         _id     = ""
-         _citation = ""
-         _summary  = ""
-         _rechash = {}
-
-         _title = xpath_get_text(xpath_first(item, "datafield[@tag='245']/subfield[@code='a']")) 
-         if xpath_first(item, "datafield[@tag='1*']") != nil 
-            xpath_all(item, "datafield[@tag='1*']/subfield[@code='a']").each { |i|
-              _author.push(xpath_get_text(i))
-           }
-         end
-         if xpath_first(item, "datafield[@tag='7*']" ) != nil  
-            xpath_all(item, "datafield[@tag='7*']/subfield[@code='a']").each { |i|
-              _author.push(xpath_get_text(i))
-           }
-         end
-
-         if xpath_first(item, "controlfield[@tag='001']") != nil 
-           _id = xpath_get_text(xpath_first(item, "controlfield[@tag='001']")) 
-           _link = 'http://www.worldcat.org/oclc/' + _id.to_s
-         end
-
-         if xpath_first(item, "datafield[@tag='520']") != nil
-	    _summary = xpath_get_text(xpath_first(item, "datafield[@tag='520']/subfield[@code='a']"))
-         else
-            if xpath_first(item, "datafield[@tag='500']") != nil
-	      _summary = xpath_get_text(xpath_first(item, "datafield[@tag='500']/subfield[@code='a']"))
-	    end
-	 end
-
-         _rechash = {:title => _title, :author => _author, :link => _link, :id => _id, :citation => _citation, 
-		     :summary => _summary, :xml => item.to_s}
-	_records.push(_rechash)
-      }
-      @records = _records
+      nodes.each do |item|
+	      @records << parse_marcxml_record(item)
+      end
    end
 
   end
