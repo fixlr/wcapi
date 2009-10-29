@@ -4,14 +4,12 @@ module WCAPI
     attr_accessor :record, :raw
 
     def initialize(doc)
-      #super doc
       @raw = doc
+      @record = {}
       parse_marcxml(doc)
     end
 
    def parse_marcxml(xml)
-      @record = {}
-      
       begin
         require 'rexml/document'
         doc = REXML::Document.new(xml)
@@ -19,9 +17,7 @@ module WCAPI
  	      #likely some kind of xml error 
       end
 
-      if node = xpath_first(doc, "/record")
-        @record.merge(parse_marcxml_record(node))
-      end
+      @record = parse_marcxml_record(xpath_first(doc, "/record"))
    end
 
   end
