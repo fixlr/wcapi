@@ -6,6 +6,10 @@ describe WCAPI::SruSearchResponse do
       @response.should be_an_instance_of(WCAPI::SruSearchResponse)
     end
     
+    it "should assign the raw xml" do
+      @response.raw.should == @xml
+    end
+    
     it "should assign an array of records" do
       @response.records.should be_an_instance_of(Array)
       @response.records.each do |record|
@@ -16,7 +20,8 @@ describe WCAPI::SruSearchResponse do
   
   describe "with an empty query string" do
     before(:all) do
-      @response = WCAPI::SruSearchResponse.new('')
+      @xml = ''
+      @response = WCAPI::SruSearchResponse.new(@xml)
     end
     
     it_should_behave_like "a WCAPI::SruSearchResponse"
@@ -24,7 +29,8 @@ describe WCAPI::SruSearchResponse do
   
   describe "with a sample MARCXML response" do
     before(:all) do
-      @response = WCAPI::SruSearchResponse.new(File.read(File.dirname(__FILE__)+'/../xml/sru_search_response.xml'))
+      @xml = File.read(File.dirname(__FILE__)+'/../xml/sru_search_response.xml')
+      @response = WCAPI::SruSearchResponse.new(@xml)
       @records = @response.records
     end
     
