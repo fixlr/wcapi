@@ -1,0 +1,5 @@
+Based on the original WCAPI gem by Terry Reese.
+http://rubyforge.org/projects/wcapi/
+
+All sample Worldcat API responses (spec/xml/*.xml) are taken from the Worldcat
+API documentation located at http://worldcat.org/devnet/wiki/SearchAPIDetails
