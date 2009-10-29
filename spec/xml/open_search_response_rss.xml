@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<rss xmlns:URLEncoder="java://java.net.URLEncoder" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:srw="http://www.loc.gov/zing/srw/" version="2.0">
+<channel>
+  <title>OCLC Worldcat Search: civil war</title> 
+  <link>http://worldcat.org/webservices/catalog/search/worldcat/opensearch?q=civil+war&amp;start=1&amp;count=10&amp;wskey=Q3axj8VvG7jWbXhETMqCqOgaqwEM0QRw59GBSKgXuXePH2bfAFXwzfFszEdlh6yehjrB9hkt29DDpL04&amp;format=rss</link> 
+  <description>Search results for "civil war" at http://worldcat.org/webservices/catalog</description> 
+  <opensearch:totalResults>356704</opensearch:totalResults> 
+  <opensearch:startIndex>1</opensearch:startIndex> 
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage> 
+  <atom:link rel="search" type="application/opensearchdescription+xml" href="http://worldcat.org/webservices/catalog/opensearch.description.xml" /> 
+  <opensearch:Query role="request" searchTerms="civil war" startPage="1" /> 
+<item>
+  <title>For whom the bell tolls.</title> 
+  <author>
+  <name>Hemingway, Ernest, 1899-1961.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/285606</link> 
+  <guid>http://worldcat.org/oclc/285606</guid> 
+  <content:encoded><p class="citation_style_MLA">Hemingway, Ernest. <u>For Whom the Bell Tolls</u>. New York: Scribner, 1940. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:7777777777</dc:identifier> 
+  <dc:identifier>urn:ISBN:9787777777779</dc:identifier> 
+  <oclcterms:recordIdentifier>285606</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>This republic of suffering : death and the American Civil War</title> 
+  <author>
+  <name>Faust, Drew Gilpin.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/123232283</link> 
+  <description>An illuminating study of the American struggle to comprehend the meaning and practicalities of death in the face of the unprecedented carnage of the Civil War. During the war, approximately 620,000 soldiers lost their lives. An equivalent proportion of today's population would be six million. This book explores the impact of this enormous death toll from every angle: material, political, intellectual, and spiritual. Historian Faust delineates the ways death changed not only individual lives but the life of the nation and its understanding of the rights and responsibilities of citizenship. She describes how survivors mourned and how a deeply religious culture struggled to reconcile the slaughter with its belief in a benevolent God, and reconceived its understanding of life after death.--From publisher description.</description> 
+  <guid>http://worldcat.org/oclc/123232283</guid> 
+  <content:encoded><p class="citation_style_MLA">Faust, Drew Gilpin. <u>This Republic of Suffering: Death and the American Civil War</u>. New York: Alfred A. Knopf, 2008. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:9780375404047</dc:identifier> 
+  <dc:identifier>urn:ISBN:037540404X</dc:identifier> 
+  <oclcterms:recordIdentifier>123232283</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>I'll pass for your comrade : women soldiers in the Civil War</title> 
+  <author>
+  <name>Silvey, Anita.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/225870878</link> 
+  <description>Sarah Emma Edmonds enlisted because she believed in the Union cause; Melverina Peppercorn joined to stay near her twin brother. Although women were not allowed to enlist as soldiers in the Civil War, many disguised themselves as men and fought anyway.</description> 
+  <guid>http://worldcat.org/oclc/225870878</guid> 
+  <content:encoded><p class="citation_style_MLA">Silvey, Anita. <u>I'll Pass for Your Comrade: Women Soldiers in the Civil War</u>. New York: Clarion Books, 2008. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:9780618574919</dc:identifier> 
+  <dc:identifier>urn:ISBN:0618574913</dc:identifier> 
+  <oclcterms:recordIdentifier>225870878</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>Civil War</title> 
+  <author>
+  <name>Stanchak, John E.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/43487214</link> 
+  <description>Examines many aspects of the Civil War, including the issue of slavery, secession, the raising of armies, individual battles, the commanders, Northern life, Confederate culture, the surrender of the South, and the aftermath.</description> 
+  <guid>http://worldcat.org/oclc/43487214</guid> 
+  <content:encoded><p class="citation_style_MLA">Stanchak, John E. <u>Civil War</u>. DK eyewitness books. New York: Dorling Kindersley Pub, 2000. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:078946988X</dc:identifier> 
+  <dc:identifier>urn:ISBN:9780789469885</dc:identifier> 
+  <dc:identifier>urn:ISBN:0789463024</dc:identifier> 
+  <dc:identifier>urn:ISBN:9780789463029</dc:identifier> 
+  <oclcterms:recordIdentifier>43487214</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>The slaves' war : the Civil War in the words of former slaves</title> 
+  <author>
+  <name>Ward, Andrew, 1946-</name> 
+  </author>
+  <link>http://worldcat.org/oclc/191732263</link> 
+  <description>The first narrative history of the Civil War as told by the very people it freed. Historian of nineteenth-century and African-American history Andrew Ward weaves together hundreds of interviews, diaries, letters, and memoirs. Here is the Civil War as seen from slave quarters, kitchens, roadsides, swamps, and fields. Body servants, army cooks and launderers, runaways, teamsters, and gravediggers bring the war to richly detailed life. From slaves' theories about the causes of the Civil War to their frank assessments of major figures; from their searing memories of the carnage of battle to their often startling attitudes toward masters and liberators alike; and from their initial jubilation at the Yankee invasion of the slave South to the crushing disappointment of freedom's promise unfulfilled, this is a transformative vision of America's second revolution.--From publisher description.</description> 
+  <guid>http://worldcat.org/oclc/191732263</guid> 
+  <content:encoded><p class="citation_style_MLA">Ward, Andrew. <u>The Slaves' War: The Civil War in the Words of Former Slaves</u>. Boston: Houghton Mifflin Co, 2008. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:9780618634002</dc:identifier> 
+  <dc:identifier>urn:ISBN:0618634002</dc:identifier> 
+  <oclcterms:recordIdentifier>191732263</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>The Judas Field : a novel of the Civil War</title> 
+  <author>
+  <name>Bahr, Howard, 1946-</name> 
+  </author>
+  <link>http://worldcat.org/oclc/62381518</link> 
+  <description>It's been twenty years since Cass Wakefield returned from the Civil War to his hometown in Mississippi, but he is still haunted by battlefield memories. Now he is presented with a chance to literally retrace his steps from the past, as his dying friend Alison urges him to accompany her on a trip to Franklin, Tennessee, to recover the bodies of her father and brother. As they make their way north over the battlefields, they are joined by two of Cass's former brothers-in-arms, and his memories reemerge with overwhelming vividness. Before long the group has assembled on the haunted ground of Franklin, where past and present--the legacy of the war and the narrow hope of redemption--will draw each of them toward a painful confrontation. Moving between harrowing scenes of battle and the novel's present-day quest, author Bahr recreates this era with devastating authority.--From publisher description.</description> 
+  <guid>http://worldcat.org/oclc/62381518</guid> 
+  <content:encoded><p class="citation_style_MLA">Bahr, Howard. <u>The Judas Field: A Novel of the Civil War</u>. New York: H. Holt, 2006. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:0805067396</dc:identifier> 
+  <dc:identifier>urn:ISBN:9780805067392</dc:identifier> 
+  <oclcterms:recordIdentifier>62381518</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>This mighty scourge : perspectives on the Civil War</title> 
+  <author>
+  <name>McPherson, James M.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/74915689</link> 
+  <guid>http://worldcat.org/oclc/74915689</guid> 
+  <content:encoded><p class="citation_style_MLA">McPherson, James M. <u>This Mighty Scourge: Perspectives on the Civil War</u>. Oxford: Oxford University Press, 2007. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:9780195313666</dc:identifier> 
+  <dc:identifier>urn:ISBN:0195313666</dc:identifier> 
+  <oclcterms:recordIdentifier>74915689</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>Under siege! : three children at the Civil War battle for Vicksburg</title> 
+  <author>
+  <name>Warren, Andrea.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/191090259</link> 
+  <description>This book looks at the 1862-63 battle for Vicksburg through the eyes of three children: ten-year-old Lucy, the daughter of a Vicksburg merchant; eleven-year-old Willie, the son of a minister; and twelve-year old Frederick, the son of Ulysses S. Grant.</description> 
+  <guid>http://worldcat.org/oclc/191090259</guid> 
+  <content:encoded><p class="citation_style_MLA">Warren, Andrea. <u>Under Siege!: Three Children at the Civil War Battle for Vicksburg</u>. New York: Melanie Kroupa Books, 2009. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:9780374312558</dc:identifier> 
+  <dc:identifier>urn:ISBN:0374312559</dc:identifier> 
+  <oclcterms:recordIdentifier>191090259</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>The Civil War.</title> 
+  <author>
+  <name>Jordan, Robert Paul.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/1034667</link> 
+  <guid>http://worldcat.org/oclc/1034667</guid> 
+  <content:encoded><p class="citation_style_MLA">Jordan, Robert Paul. <u>The Civil War</u>. [Washington]: National Geographic Society, 1969. </p></content:encoded> 
+  <oclcterms:recordIdentifier>1034667</oclcterms:recordIdentifier> 
+  </item>
+<item>
+  <title>First lady of the Confederacy : Varina Davis's Civil War</title> 
+  <author>
+  <name>Cashin, Joan E.</name> 
+  </author>
+  <link>http://worldcat.org/oclc/64625034</link> 
+  <guid>http://worldcat.org/oclc/64625034</guid> 
+  <content:encoded><p class="citation_style_MLA">Cashin, Joan E. <u>First Lady of the Confederacy: Varina Davis's Civil War</u>. Cambridge, Mass: Belknap Press of Harvard University Press, 2006. </p></content:encoded> 
+  <dc:identifier>urn:ISBN:0674022947</dc:identifier> 
+  <dc:identifier>urn:ISBN:9780674022942</dc:identifier> 
+  <oclcterms:recordIdentifier>64625034</oclcterms:recordIdentifier> 
+  </item>
+  </channel>
+  </rss>
