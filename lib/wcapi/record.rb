@@ -1,7 +1,8 @@
 module WCAPI
   class Record
     include WCAPI::ResponseParser
-
+    attr_accessor :doc
+    
     def initialize(doc = '')
        @doc = doc
     end

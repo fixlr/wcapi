@@ -1,7 +1,6 @@
 module WCAPI
   module ResponseParser
     module HpricotParser
-      
       def get_parser(xml)
         Hpricot.XML(xml)
       end

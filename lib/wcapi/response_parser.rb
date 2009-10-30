@@ -2,6 +2,7 @@ module WCAPI
   module ResponseParser
     def self.included(mod)
       begin
+        require 'rubygems'
         require 'hpricot'
         mod.send(:include, WCAPI::ResponseParser::HpricotParser)
       rescue

@@ -10,7 +10,6 @@ module WCAPI
   #   client = WCAPI::Client.new :query => 'query', :format => [atom|rss], :start => [position], :count => [max records], :cformat => [mla|apa], :wskey => [your world cat key
   # options:
   #    wskey
-  #    xmlparser [by default, rexml, but libxml supported]
   #
   #
   # More information can be found at:
@@ -26,7 +25,6 @@ module WCAPI
     
     def initialize(options={})
       @debug  = options[:debug]
-      @parser = options[:xmlparser] ? 'rexml'
       @wskey  = options[:wskey]
     end
 
