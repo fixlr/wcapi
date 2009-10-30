@@ -1,24 +1,21 @@
+require 'rexml/document'
+
 module WCAPI
   class GetRecordResponse 
-    include WCAPI::XPath
+    include WCAPI::ResponseParser
+    
     attr_accessor :record, :raw
 
-    def initialize(doc)
-      @raw = doc
+    def initialize(xml)
+      @raw = xml
       @record = {}
-      parse_marcxml(doc)
+
+      @record = (xml == '') ? WCAPI::Record.new : parse_marcxml(xml)
     end
 
-   def parse_marcxml(xml)
-      begin
-        require 'rexml/document'
-        doc = REXML::Document.new(xml)
-      rescue
- 	      #likely some kind of xml error 
-      end
-
-      @record = parse_marcxml_record(xpath_first(doc, "/record"))
+    def parse_marcxml(xml)
+      doc = get_parser(xml)
+      WCAPI::Record.new(xpath_first(doc, "/record"))
    end
-
   end
 end

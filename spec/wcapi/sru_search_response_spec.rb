@@ -13,7 +13,7 @@ describe WCAPI::SruSearchResponse do
     it "should assign an array of records" do
       @response.records.should be_an_instance_of(Array)
       @response.records.each do |record|
-        record.should be_an_instance_of(Hash)
+        record.should be_an_instance_of(WCAPI::Record)
       end
     end
   end

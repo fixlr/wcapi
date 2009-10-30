@@ -7,7 +7,7 @@ describe WCAPI::GetRecordResponse do
     end
     
     it "should assign a single record" do
-      @response.record.should be_an_instance_of(Hash)
+      @response.record.should be_an_instance_of(WCAPI::Record)
     end
   end
 
@@ -26,21 +26,21 @@ describe WCAPI::GetRecordResponse do
     end
   
     it_should_behave_like "a WCAPI::GetRecordResponse"
-
+      
     it "should have an OCLC id" do
-      @record[:id].should == '57358293'
+      @record.oclc_id.should == '57358293'
     end
-
+      
     it "should have a title" do
-      @record[:title].should == 'Harry Potter and the Half-Blood Prince /'
+      @record.title.should == 'Harry Potter and the Half-Blood Prince /'
     end
     
     it "should have a link" do
-      @record[:link].should == 'http://www.worldcat.org/oclc/57358293'
+      @record.link.should == 'http://www.worldcat.org/oclc/57358293'
     end
     
     it "should have an author" do
-      @record[:author].first.should eql("Rowling, J. K.")
+      @record.authors.first.should eql("Rowling, J. K.")
     
       # There's some issues here with character encoding, so I'm  ignoring this
       # 700 field for now.
@@ -48,11 +48,11 @@ describe WCAPI::GetRecordResponse do
     end
     
     it "should have a summary" do
-      @record[:summary].should == "Sixth-year Hogwarts student Harry Potter gains valuable insights into the boy Voldemort once was, even as his own world is transformed by maturing friendships, schoolwork assistance from an unexpected source, and devastating losses."
+      @record.summary.should == "Sixth-year Hogwarts student Harry Potter gains valuable insights into the boy Voldemort once was, even as his own world is transformed by maturing friendships, schoolwork assistance from an unexpected source, and devastating losses."
     end
     
     it "should have a citation" do
-      @record[:citation].should == ''
+      @record.citation.should == ''
     end
   end
 end

@@ -1,114 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <record xmlns="http://www.loc.gov/MARC21/slim">
-    <leader>00000    a2200000   4500</leader>
-    <controlfield tag="001">57358293</controlfield>
-    <controlfield tag="008">050125s2005    nyu                 eng  </controlfield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">0439784549 (hardcover)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">9780439784542 (hardcover)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">0439786770 (reinforced lib. bdg.)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">9780439786775 (reinforced lib. bdg.)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">0439791324 (deluxe edition)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">9780439791328 (deluxe edition)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">0439785960 (pbk.)</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="020">
-      <subfield code="a">9780439785969 (pbk.)</subfield>
-    </datafield>
-    <datafield ind1="1" ind2=" " tag="100">
-      <subfield code="a">Rowling, J. K.</subfield>
-    </datafield>
-    <datafield ind1="1" ind2="0" tag="245">
-      <subfield code="a">Harry Potter and the Half-Blood Prince /</subfield>
-      <subfield code="c">by J.K. Rowling ; illustrations by Mary GrandPré.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="260">
-      <subfield code="a">New York, NY :</subfield>
-      <subfield code="b">Arthur A. Levine Books,</subfield>
-      <subfield code="c">2005.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="300">
-      <subfield code="a">x, 652 p. :</subfield>
-      <subfield code="b">ill. ;</subfield>
-      <subfield code="c">24 cm.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="500">
-      <subfield code="a">"Year 6"--Spine.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="500">
-      <subfield code="a">Sequel to: Harry Potter and the Order of the Phoenix.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="500">
-      <subfield code="a">Sequel: Harry Potter and the deathly hallows.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2=" " tag="520">
-      <subfield code="a">Sixth-year Hogwarts student Harry Potter gains valuable insights into the boy Voldemort once was, even as his own world is transformed by maturing friendships, schoolwork assistance from an unexpected source, and devastating losses.</subfield>
-    </datafield>
-    <datafield ind1="0" ind2=" " tag="505">
-      <subfield code="a">The other minister -- Spinner's end -- Will and won't -- Horace Slughorn -- An excess of phlegm -- Draco's detour -- The slug club -- Snape victorious -- The Half-Blood Prince -- The house of gaunt -- Hermione's helping hand -- Silver and opals -- The secret riddle -- Felix Felicis -- The unbreakable vow -- A very frosty Christmas -- A sluggish memory -- Birthday surprises -- Elf tails -- Lord Voldemort's request -- The unknownable room -- After the burial -- Horcruxes -- Sectumsempra -- The seer overheard -- The cave -- The lightning-struck tower -- Flight of the prince -- The Phoenix lament -- The white tomb.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="1" tag="650">
-      <subfield code="a">Wizards</subfield>
-      <subfield code="v">Fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="1" tag="650">
-      <subfield code="a">Magic</subfield>
-      <subfield code="v">Fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="1" tag="650">
-      <subfield code="a">Schools</subfield>
-      <subfield code="v">Fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="1" tag="651">
-      <subfield code="a">England</subfield>
-      <subfield code="v">Fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="7" tag="655">
-      <subfield code="a">Fantasy fiction.</subfield>
-      <subfield code="2">gsafd</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="7" tag="655">
-      <subfield code="a">Juvenile materials.</subfield>
-      <subfield code="2">local</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="0" tag="650">
-      <subfield code="a">Potter, Harry (Fictitious character)</subfield>
-      <subfield code="v">Juvenile fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="0" tag="650">
-      <subfield code="a">Hogwarts School of Witchcraft and Wizardry (Imaginary place)</subfield>
-      <subfield code="v">Juvenile fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="0" tag="650">
-      <subfield code="a">Wizards</subfield>
-      <subfield code="v">Juvenile fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="0" tag="650">
-      <subfield code="a">Magic</subfield>
-      <subfield code="v">Juvenile fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="0" tag="650">
-      <subfield code="a">Schools</subfield>
-      <subfield code="v">Juvenile fiction.</subfield>
-    </datafield>
-    <datafield ind1=" " ind2="0" tag="651">
-      <subfield code="a">England</subfield>
-      <subfield code="v">Juvenile fiction.</subfield>
-    </datafield>
-    <datafield ind1="1" ind2=" " tag="700">
-      <subfield code="a">GrandPré, Mary,</subfield>
-      <subfield code="e">ill.</subfield>
-    </datafield>
-  </record>
+	<leader>00000    a2200000   4500</leader>
+	<controlfield tag="001">57358293</controlfield>
+	<controlfield tag="008">050125s2005    nyu                 eng  </controlfield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">0439784549 (hardcover)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">9780439784542 (hardcover)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">0439786770 (reinforced lib. bdg.)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">9780439786775 (reinforced lib. bdg.)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">0439791324 (deluxe edition)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">9780439791328 (deluxe edition)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">0439785960 (pbk.)</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="020">
+		<subfield code="a">9780439785969 (pbk.)</subfield>
+	</datafield>
+	<datafield ind1="1" ind2=" " tag="100">
+		<subfield code="a">Rowling, J. K.</subfield>
+	</datafield>
+	<datafield ind1="1" ind2="0" tag="245">
+		<subfield code="a">Harry Potter and the Half-Blood Prince /</subfield>
+		<subfield code="c">by J.K. Rowling ; illustrations by Mary GrandPré.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="260">
+		<subfield code="a">New York, NY :</subfield>
+		<subfield code="b">Arthur A. Levine Books,</subfield>
+		<subfield code="c">2005.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="300">
+		<subfield code="a">x, 652 p. :</subfield>
+		<subfield code="b">ill. ;</subfield>
+		<subfield code="c">24 cm.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="500">
+		<subfield code="a">"Year 6"--Spine.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="500">
+		<subfield code="a">Sequel to: Harry Potter and the Order of the Phoenix.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="500">
+		<subfield code="a">Sequel: Harry Potter and the deathly hallows.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2=" " tag="520">
+		<subfield code="a">Sixth-year Hogwarts student Harry Potter gains valuable insights into the boy Voldemort once was, even as his own world is transformed by maturing friendships, schoolwork assistance from an unexpected source, and devastating losses.</subfield>
+	</datafield>
+	<datafield ind1="0" ind2=" " tag="505">
+		<subfield code="a">The other minister -- Spinner's end -- Will and won't -- Horace Slughorn -- An excess of phlegm -- Draco's detour -- The slug club -- Snape victorious -- The Half-Blood Prince -- The house of gaunt -- Hermione's helping hand -- Silver and opals -- The secret riddle -- Felix Felicis -- The unbreakable vow -- A very frosty Christmas -- A sluggish memory -- Birthday surprises -- Elf tails -- Lord Voldemort's request -- The unknownable room -- After the burial -- Horcruxes -- Sectumsempra -- The seer overheard -- The cave -- The lightning-struck tower -- Flight of the prince -- The Phoenix lament -- The white tomb.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="1" tag="650">
+		<subfield code="a">Wizards</subfield>
+		<subfield code="v">Fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="1" tag="650">
+		<subfield code="a">Magic</subfield>
+		<subfield code="v">Fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="1" tag="650">
+		<subfield code="a">Schools</subfield>
+		<subfield code="v">Fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="1" tag="651">
+		<subfield code="a">England</subfield>
+		<subfield code="v">Fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="7" tag="655">
+		<subfield code="a">Fantasy fiction.</subfield>
+		<subfield code="2">gsafd</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="7" tag="655">
+		<subfield code="a">Juvenile materials.</subfield>
+		<subfield code="2">local</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="0" tag="650">
+		<subfield code="a">Potter, Harry (Fictitious character)</subfield>
+		<subfield code="v">Juvenile fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="0" tag="650">
+		<subfield code="a">Hogwarts School of Witchcraft and Wizardry (Imaginary place)</subfield>
+		<subfield code="v">Juvenile fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="0" tag="650">
+		<subfield code="a">Wizards</subfield>
+		<subfield code="v">Juvenile fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="0" tag="650">
+		<subfield code="a">Magic</subfield>
+		<subfield code="v">Juvenile fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="0" tag="650">
+		<subfield code="a">Schools</subfield>
+		<subfield code="v">Juvenile fiction.</subfield>
+	</datafield>
+	<datafield ind1=" " ind2="0" tag="651">
+		<subfield code="a">England</subfield>
+		<subfield code="v">Juvenile fiction.</subfield>
+	</datafield>
+	<datafield ind1="1" ind2=" " tag="700">
+		<subfield code="a">GrandPré, Mary,</subfield>
+		<subfield code="e">ill.</subfield>
+	</datafield>
+</record>

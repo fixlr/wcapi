@@ -1,6 +1,6 @@
 module WCAPI
   class GetLocationResponse 
-    include WCAPI::XPath
+    include WCAPI::ResponseParser
     attr_accessor :institutions, :raw
 
     def initialize(doc)
