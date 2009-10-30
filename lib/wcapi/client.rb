@@ -34,10 +34,6 @@ module WCAPI
       @wskey = options[:wskey]
     end
 
-    # Equivalent to a Identify request. You'll get back a OAI::IdentifyResponse
-    # object which is essentially just a wrapper around a REXML::Document 
-    # for the response.
-    
     def OpenSearch(opts={}) 
       @base = URI.parse WORLDCAT_OPENSEARCH
       opts["wskey"] = @wskey
@@ -47,9 +43,9 @@ module WCAPI
 
     def GetRecord(opts={})
       if opts[:type] == 'oclc'
-         @base = URI.parse "http://www.worldcat.org/webservices/catalog/content/" + opts[:id]
+        @base = URI.parse WORLDCAT_GETRECORD + opts[:id]
       else
-	 @base = URI.parse 'http://www.worldcat.org/webservices/catalog/content/isbn/' + opts[:id]
+	      @base = URI.parse WORLDCAT_GETRECORD_ISBN + opts[:id]
       end
       opts.delete("type")
       opts["wskey"] = @wskey
@@ -57,12 +53,11 @@ module WCAPI
       return GetRecordResponse.new(xml)
     end
 
-
     def GetLocations(opts={})
        if opts[:type] == 'oclc'
-         @base = URI.parse "http://www.worldcat.org/webservices/catalog/content/libraries/" + opts[:id]
+         @base = URI.parse WORLDCAT_GETLOCATION + opts[:id]
       else
-         @base = URI.parse 'http://www.worldcat.org/webservices/catalog/content/libraries/isbn/' + opts[:id]
+         @base = URI.parse WORLDCAT_GETLOCATION_ISBN + opts[:id]
       end
       opts.delete("type")
       opts["wskey"] = @wskey
@@ -72,9 +67,9 @@ module WCAPI
 
     def GetCitation(opts = {})
      if opts[:type] == 'oclc'
-         @base = URI.parse "http://www.worldcat.org/webservices/catalog/content/citations/" + opts[:id]
+         @base = URI.parse WORLDCAT_GETCITATION + opts[:id]
       else
-         @base = URI.parse 'http://www.worldcat.org/webservices/catalog/content/citations/isbn/' + opts[:id]
+         @base = URI.parse WORLDCAT_GETCITATION_ISBN + opts[:id]
       end
       opts.delete("type")
       opts["wskey"] = @wskey
@@ -89,7 +84,6 @@ module WCAPI
       xml = do_request(opts)
       return SruSearchResponse.new(xml)
     end
-
 
     private 
 
@@ -106,11 +100,11 @@ module WCAPI
       uri.query = parts.join('&')
       debug("doing request: #{uri.to_s}")
 
-      # fire off the request and return an REXML::Document object
+      # fire off the request and return the XML
       begin
         xml = Net::HTTP.get(uri)
         debug("got response: #{xml}")
-	return xml
+	      return xml
       rescue SystemCallError=> e
         #raise WCAPI::Exception, 'HTTP level error during WCAPI  request: '+e, caller
       end
@@ -129,9 +123,8 @@ module WCAPI
       $stderr.print("#{msg}\n") if @debug
     end
 
-     def to_h(default=nil)
-        Hash[ *inject([]) { |a, value| a.push value, default || yield(value) } ]
-     end
-
+    def to_h(default=nil)
+      Hash[ *inject([]) { |a, value| a.push value, default || yield(value) } ]
+    end
   end
 end
