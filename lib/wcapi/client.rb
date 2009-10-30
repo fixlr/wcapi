@@ -25,18 +25,13 @@ module WCAPI
     # :debug => true
     
     def initialize(options={})
-      @debug = options[:debug]
-      #if defined?(options[:xmlparser]: 
-      #	 @xmlparser = options[:xmlparser]
-      #else
-      #	 @xmlparser = 'rexml'
-      #end
-      @wskey = options[:wskey]
+      @debug  = options[:debug]
+      @parser = options[:xmlparser] ? 'rexml'
+      @wskey  = options[:wskey]
     end
 
     def OpenSearch(opts={}) 
       @base = URI.parse WORLDCAT_OPENSEARCH
-      opts["wskey"] = @wskey
       xml = do_request(opts)
       return OpenSearchResponse.new(xml)
     end
@@ -48,7 +43,6 @@ module WCAPI
 	      @base = URI.parse WORLDCAT_GETRECORD_ISBN + opts[:id]
       end
       opts.delete("type")
-      opts["wskey"] = @wskey
       xml = do_request(opts)
       return GetRecordResponse.new(xml)
     end
@@ -60,7 +54,6 @@ module WCAPI
          @base = URI.parse WORLDCAT_GETLOCATION_ISBN + opts[:id]
       end
       opts.delete("type")
-      opts["wskey"] = @wskey
       xml = do_request(opts)
       return GetLocationResponse.new(xml)
     end    
@@ -72,7 +65,6 @@ module WCAPI
          @base = URI.parse WORLDCAT_GETCITATION_ISBN + opts[:id]
       end
       opts.delete("type")
-      opts["wskey"] = @wskey
       xml = do_request(opts)
       #Returns an HTML representation
       return xml
@@ -89,6 +81,8 @@ module WCAPI
 
     def do_request(hash)
       uri = @base.clone
+
+      hash["wskey"] = @wskey
 
       # build up the query string
       parts = hash.entries.map do |entry|
