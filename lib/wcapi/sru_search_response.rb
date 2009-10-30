@@ -1,6 +1,6 @@
 module WCAPI
   class SruSearchResponse
-    include WCAPI::ResponseParser::HpricotParser
+    include WCAPI::ResponseParser
 
     attr_accessor :header, :records, :raw
 
