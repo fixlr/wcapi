@@ -3,7 +3,7 @@ module WCAPI
     include WCAPI::ResponseParser
     attr_accessor :institutions, :raw
 
-    def initialize(doc)
+    def initialize(doc='')
       #super doc
       @raw = doc
       parse_holdings(doc)

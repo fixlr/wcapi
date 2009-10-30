@@ -4,7 +4,7 @@ module WCAPI
 
     attr_accessor :header, :records, :raw
 
-    def initialize(doc)
+    def initialize(doc='')
       @raw = doc
       @header = {}
       @records = []

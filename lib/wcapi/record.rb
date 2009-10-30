@@ -50,6 +50,8 @@ module WCAPI
           @summary = xpath_get_text(xpath_first(@doc, "datafield[@tag='520']/subfield[@code='a']"))
         elsif xpath_first(@doc, "datafield[@tag='500']") != nil
           @summary = xpath_get_text(xpath_first(@doc, "datafield[@tag='500']/subfield[@code='a']"))
+        else
+          @summary = ''
         end
       end
       return @summary

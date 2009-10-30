@@ -4,7 +4,7 @@ module WCAPI
 
     attr_accessor :header, :records, :raw
 
-    def initialize(xml)
+    def initialize(xml='')
       @raw = xml
       @records = []
       @header  = {}
