@@ -10,6 +10,16 @@ module WCAPI
     def oclc_id
       @id ||= xpath_get_text(xpath_first(@doc, "controlfield[@tag='001']"))
     end
+    
+    def isbns
+      unless @isbns
+        @isbns = []
+        xpath_all(@doc, "datafield[@tag='020']/subfield[@code='a']").each do |i|
+          @isbns << xpath_get_text(i)
+        end
+      end
+      return @isbns
+    end
 
     def link
       "http://www.worldcat.org/oclc/#{self.oclc_id}"

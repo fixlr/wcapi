@@ -18,7 +18,7 @@ describe WCAPI::OpenSearchResponse do
     end
   end
   
-  shared_examples_for "WCAPI::OpenSearchResponse with sample headers" do
+  shared_examples_for "WCAPI::OpenSearchResponse with sample records" do
     it "should know the totalResults" do
       @response.header['totalResults'].should == 356704
     end
@@ -29,6 +29,10 @@ describe WCAPI::OpenSearchResponse do
 
     it "should know the itemsPerPage" do
       @response.header['itemsPerPage'].should == 10
+    end
+
+    it "should parse the isbns" do
+      @records.first[:isbns].should == ["urn:ISBN:7777777777", "urn:ISBN:9787777777779"]
     end
   end
   
@@ -49,7 +53,7 @@ describe WCAPI::OpenSearchResponse do
     end
     
     it_should_behave_like "a WCAPI::OpenSearchResponse"
-    it_should_behave_like "WCAPI::OpenSearchResponse with sample headers"
+    it_should_behave_like "WCAPI::OpenSearchResponse with sample records"
   end
   
   describe "with a sample ATOM response" do
@@ -60,6 +64,6 @@ describe WCAPI::OpenSearchResponse do
     end
     
     it_should_behave_like "a WCAPI::OpenSearchResponse"
-    it_should_behave_like "WCAPI::OpenSearchResponse with sample headers"
+    it_should_behave_like "WCAPI::OpenSearchResponse with sample records"
   end
 end

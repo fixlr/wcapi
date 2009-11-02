@@ -31,6 +31,11 @@ describe WCAPI::GetRecordResponse do
       @record.oclc_id.should == '57358293'
     end
       
+    it "should have an array of isbn ids" do
+      @record.isbns.should be_an_instance_of(Array)
+      @record.isbns.should == ["0439784549 (hardcover)", "9780439784542 (hardcover)", "0439786770 (reinforced lib. bdg.)", "9780439786775 (reinforced lib. bdg.)", "0439791324 (deluxe edition)", "9780439791328 (deluxe edition)", "0439785960 (pbk.)", "9780439785969 (pbk.)"]
+    end
+      
     it "should have a title" do
       @record.title.should == 'Harry Potter and the Half-Blood Prince /'
     end
