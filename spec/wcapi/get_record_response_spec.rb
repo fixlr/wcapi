@@ -37,7 +37,7 @@ describe WCAPI::GetRecordResponse do
     end
       
     it "should have a title" do
-      @record.title.should == 'Harry Potter and the Half-Blood Prince /'
+      @record.title.should == ['Harry Potter and the Half-Blood Prince /']
     end
     
     it "should have a link" do

@@ -26,7 +26,16 @@ module WCAPI
     end
 
     def title
-      @title ||= xpath_get_text(xpath_first(@doc, "datafield[@tag='245']/subfield[@code='a']"))
+      unless @title
+        @title = []
+        xpath_all(@doc, "datafield[@tag='245']/subfield[@code='a']").each do |i|
+          @title << xpath_get_text(i)
+        end
+        xpath_all(@doc, "datafield[@tag='245']/subfield[@code='b']").each do |i|
+          @title << xpath_get_text(i)
+        end
+      end
+      return @title
     end
     
     def authors
