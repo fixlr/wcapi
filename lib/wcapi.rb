@@ -1,4 +1,4 @@
-%w(response_parser rexml_parser hpricot_parser client open_search_response get_record_response get_location_response sru_search_response record).each do |file|
+%w(response_parser rexml_parser hpricot_parser client open_search_response get_record_response get_location_response sru_search_response record record/isbn).each do |file|
   require File.join(File.dirname(__FILE__), 'wcapi', file)
 end
 

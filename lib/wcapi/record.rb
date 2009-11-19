@@ -15,7 +15,7 @@ module WCAPI
       unless @isbns
         @isbns = []
         xpath_all(@doc, "datafield[@tag='020']/subfield[@code='a']").each do |i|
-          @isbns << xpath_get_text(i)
+          @isbns << WCAPI::Record::ISBN.new(xpath_get_text(i))
         end
       end
       return @isbns
