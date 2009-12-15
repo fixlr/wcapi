@@ -1,0 +1,20 @@
+<holding>
+	<institutionIdentifier>
+		<value>CZP</value>
+		<typeOrSource>
+			<pointer>http://worldcat.org/registry/institutions/</pointer>
+		</typeOrSource>
+	</institutionIdentifier>
+	<physicalLocation>Peninsula Library System</physicalLocation>
+	<physicalAddress>
+		<text>San Mateo, CA 94403 United States</text>
+	</physicalAddress>
+	<electronicAddress>
+		<text>http://www.worldcat.org/wcpa/oclc/8114241?page=frame&url=http%3A%2F%2Fcatalog.plsinfo.org%2Fsearch%2Fi0380641135&title=Peninsula+Library+System&linktype=opac&detail=CZP%3APeninsula+Library+System%3APublic&qt=affiliate&ai=wcapi</text>
+	</electronicAddress>
+	<holdingSimple>
+		<copiesSummary>
+			<copiesCount>1</copiesCount>
+		</copiesSummary>
+	</holdingSimple>
+</holding>
