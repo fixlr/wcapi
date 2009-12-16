@@ -22,8 +22,8 @@ module WCAPI
       @header["startRecord"] = xpath_get_text(xpath_first(doc, "//startRecord")).to_i
  
       nodes = xpath_all(doc, "//records/record/recordData/record")
-      nodes.each do |item|
-	      @records << WCAPI::Record.new(item)
+      @records = nodes.collect do |item|
+	      WCAPI::Record.new(item)
       end
    end
 
