@@ -1,0 +1,6 @@
+<diagnostics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:isohol="http://oclcpica.org/?id=1013&amp;ln=uk"> 
+<diagnostic xmlns="http://www.loc.gov/zing/srw/diagnostic/"> 
+<uri>info:srw/diagnostic/1/65</uri> 
+<message>Record does not exist</message> 
+</diagnostic> 
+</diagnostics> 
