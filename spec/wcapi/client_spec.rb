@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe WCAPI::Client do
   before(:all) do
-    @client = WCAPI::Client.new(:wckey => 'example')
+    @client = WCAPI::Client.new(:wskey => 'example')
   end
   
   it "should be an instance of WCAPI::Client" do
@@ -28,6 +28,12 @@ describe WCAPI::Client do
     
     response = @client.OpenSearch(:q => 'civil war')
     response.should be_an_instance_of(WCAPI::OpenSearchResponse)
+  end
+
+  it "should be able to get holdings information for a record" do
+    Net::HTTP.expects(:get).returns('')
+    response = @client.GetLocations(:id => "57358293", :type => "oclc")
+    response.should be_an_instance_of(WCAPI::GetLocationResponse)
   end
 
 end

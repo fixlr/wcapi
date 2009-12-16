@@ -1,0 +1,202 @@
+<holdings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.loc.gov/standards/iso20775/N121_ISOholdings_v4.xsd"> 
+<holding> 
+<institutionIdentifier> 
+<value>NAM</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>University at Albany</physicalLocation> 
+<physicalAddress> 
+<text>Albany, NY 12222 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Fp8991-libms3.albany.edu.libproxy.albany.edu%2FF%2F%3Ffunc%3Dfind-e%26find_scan_code%3DSCAN_ISBN%26request%3D0439784549%26checksum%3D21f030af2f35e82576aba40e0ea35838&amp;title=University+at+Albany&amp;linktype=opac&amp;detail=NAM%3AUniversity+at+Albany%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>ZRS</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>The Sage Colleges</physicalLocation> 
+<physicalAddress> 
+<text>Troy, NY 12180 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Flibrary.sage.edu%2Fuhtbin%2Fcgisirsi%2Fx%2F0%2F0%2F5%2F%3Fsearchdata1%3D0439784549%26checksum%3D54d23f4ae4df254e0ad1044e86fc8640&amp;title=The+Sage+Colleges&amp;linktype=opac&amp;detail=ZRS%3AThe+Sage+Colleges%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>ZWU</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Union College</physicalLocation> 
+<physicalAddress> 
+<text>Schenectady, NY 12308 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Flibraryopac.union.edu%2Fsearch%2Fi%3FSEARCH%3D0439784549%26checksum%3Dc5f0172d4723eefa0c10cbc2d8d9583c&amp;title=Union+College&amp;linktype=opac&amp;detail=ZWU%3AUnion+College%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>XJM</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Schenectady County Community College</physicalLocation> 
+<physicalAddress> 
+<text>Schenectady, NY 12305 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Fdelaware.sunyconnect.suny.edu%3A4850%2FF%2F%3Ffunc%3Dfind-e%26find_scan_code%3DFIND_020%26request%3D0439784549%26checksum%3D0963a212970bf2a0aaaef8c172911579&amp;title=Schenectady+County+Community+College&amp;linktype=opac&amp;detail=XJM%3ASchenectady+County+Community+College%3AVotech/Community Col&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>VDH</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Columbia-Greene Community College Library</physicalLocation> 
+<physicalAddress> 
+<text>Hudson, NY 12534 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Fdelaware.sunyconnect.suny.edu%3A4650%2FF%2F%3Ffunc%3Dfind-a%26find_code%3D020%26request%3D0439784549%26checksum%3D71b6012b2ecc4900780579b487d91cc8&amp;title=Columbia-Greene+Community+College+Library&amp;linktype=opac&amp;detail=VDH%3AColumbia-Greene+Community+College+Library%3AVotech/Community Col&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>WCM</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Williams College</physicalLocation> 
+<physicalAddress> 
+<text>Williamstown, MA 01267 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Ffrancis.williams.edu%2Fsearch%2Fi%3D0439784549%26checksum%3D1b38b2684555c2f1151b3278e4a629d8&amp;title=Williams+College&amp;linktype=opac&amp;detail=WCM%3AWilliams+College%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>VZS</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Skidmore College</physicalLocation> 
+<physicalAddress> 
+<text>Saratoga Springs, NY 12866 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Flucy2.skidmore.edu%2Fcgi-bin%2FPwebrecon.cgi%3FDB%3Dlocal%26CNT%3D25%26HIST%3D1%26BOOL1%3Das%2Ba%2Bphrase%26FLD1%3DISBN%2B%28ISBN%29%26SAB1%3D0439784549%26checksum%3D3dfb637371b5fff9648b0af279d9687b&amp;title=Skidmore+College&amp;linktype=opac&amp;detail=VZS%3ASkidmore+College%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>BNT</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Bennington College</physicalLocation> 
+<physicalAddress> 
+<text>Bennington, VT 05201 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Flibrary.bennington.edu%2Fsearch%2Fi0439784549%26checksum%3D4c15b7240c0915adaf6e7f7d3ac1f622&amp;title=Bennington+College&amp;linktype=opac&amp;detail=BNT%3ABennington+College%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>YSR</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>Simon's Rock College of Bard</physicalLocation> 
+<physicalAddress> 
+<text>Great Barrington, MA 01230 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Fsimonsrock.ipac.dynixasp.com%2Fipac20%2Fipac.jsp%3F%26index%3DISBNEX%26term%3D0439784549%26checksum%3D03efc2811581ab0f59458311a0d2ae99&amp;title=Simon%27s+Rock+College+of+Bard&amp;linktype=opac&amp;detail=YSR%3ASimon%27s+Rock+College+of+Bard%3AAcademic&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+<holding> 
+<institutionIdentifier> 
+<value>WKM</value> 
+<typeOrSource> 
+<pointer>http://worldcat.org/registry/institutions/</pointer> 
+</typeOrSource> 
+</institutionIdentifier> 
+<physicalLocation>SUNY Agr &amp; Tech College at Cobleskill</physicalLocation> 
+<physicalAddress> 
+<text>Cobleskill, NY 12043 United States</text> 
+</physicalAddress> 
+<electronicAddress> 
+<text>http://www.worldcat.org/wcpa/oclc/57358293?page=frame&amp;url=http%3A%2F%2Fdelaware.sunyconnect.suny.edu%3A4580%2FF%2F%3Ffunc%3Dfind-a%26find_code%3D020%26request%3D0439784549%26checksum%3Dc2ce9dd3fd144809d716efde5713d027&amp;title=SUNY+Agr+%26+Tech+College+at+Cobleskill&amp;linktype=opac&amp;detail=WKM%3ASUNY+Agr+%26+Tech+College+at+Cobleskill%3AVotech/Community Col&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text> 
+</electronicAddress> 
+<holdingSimple> 
+<copiesSummary> 
+<copiesCount>1</copiesCount> 
+</copiesSummary> 
+</holdingSimple> 
+</holding> 
+</holdings> 
