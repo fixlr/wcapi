@@ -40,7 +40,8 @@ module WCAPI
       else
 	      @base = URI.parse WORLDCAT_GETRECORD_ISBN + opts[:id]
       end
-      opts.delete("type")
+      opts.delete(:type)
+      opts.delete(:id)
       xml = do_request(opts)
       return GetRecordResponse.new(xml)
     end
@@ -51,7 +52,8 @@ module WCAPI
       else
          @base = URI.parse WORLDCAT_GETLOCATION_ISBN + opts[:id]
       end
-      opts.delete("type")
+      opts.delete(:type)
+      opts.delete(:id)
       xml = do_request(opts)
       return GetLocationResponse.new(xml)
     end    
@@ -62,7 +64,8 @@ module WCAPI
       else
          @base = URI.parse WORLDCAT_GETCITATION_ISBN + opts[:id]
       end
-      opts.delete("type")
+      opts.delete(:type)
+      opts.delete(:id)
       xml = do_request(opts)
       #Returns an HTML representation
       return xml
@@ -70,7 +73,6 @@ module WCAPI
 
     def SRUSearch(opts={})
       @base = URI.parse WORLDCAT_SRU
-      opts["wskey"] = @wskey
       xml = do_request(opts)
       return SruSearchResponse.new(xml)
     end
