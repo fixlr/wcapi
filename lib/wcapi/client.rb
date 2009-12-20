@@ -1,25 +1,13 @@
-require 'uri'
-require 'net/http'
-require 'cgi'
-
 module WCAPI 
-
   # The WCAPI::Client object provides a public facing interface to interacting
   # with the various WorldCat API Grid Services. 
   #
-  #   client = WCAPI::Client.new :query => 'query', :format => [atom|rss], :start => [position], :count => [max records], :cformat => [mla|apa], :wskey => [your world cat key
-  # options:
-  #    wskey
-  #
+  #   client = WCAPI::Client.new :wskey => [your world cat key]
   #
   # More information can be found at:
   #   http://worldcat.org/devnet/wiki/SearchAPIDetails  
   
   class Client
-
-    # The constructor which must be passed a valid base url for an oai 
-    # service:
-    #
     # If you want to see debugging messages on STDERR use:
     # :debug => true
     
@@ -66,9 +54,7 @@ module WCAPI
       end
       opts.delete(:type)
       opts.delete(:id)
-      xml = do_request(opts)
-      #Returns an HTML representation
-      return xml
+      do_request(opts) # Returns an HTML representation
     end
 
     def SRUSearch(opts={})
