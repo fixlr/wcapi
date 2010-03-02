@@ -6,11 +6,15 @@ module WCAPI
     def initialize(doc = '')
        @doc = doc
     end
-    
+
     def oclc_id
       @id ||= xpath_get_text(xpath_first(@doc, "controlfield[@tag='001']"))
     end
-    
+
+    def leader
+      @leader ||= WCAPI::Record::Leader.new(xpath_get_text(xpath_first(@doc, "leader")))
+    end
+
     def isbns
       unless @isbns
         @isbns = []
