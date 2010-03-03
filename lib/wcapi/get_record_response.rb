@@ -15,7 +15,8 @@ module WCAPI
 
     def parse_marcxml(xml)
       doc = get_parser(xml)
-      WCAPI::Record.new(xpath_first(doc, "/record"))
+      record = WCAPI::Record.new(xpath_first(doc, "/record"))
+      (record.doc.nil?) ? nil : record
    end
   end
 end

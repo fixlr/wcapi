@@ -15,7 +15,7 @@ describe WCAPI::Holding do
   end
   
   it "should know the holding identifier" do
-    @holding.id.should == 'CZP'
+    @holding.code.should == 'CZP'
   end
   
   it "should know the type or source" do

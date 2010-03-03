@@ -7,28 +7,28 @@ module WCAPI
       @doc = xml
     end
     
-    def id
-      xpath_get_text(xpath_first(@doc, "holding/institutionIdentifier/value"))
+    def code
+      xpath_get_text(xpath_first(@doc, "institutionIdentifier/value"))
     end
     
     def type
-      xpath_get_text(xpath_first(@doc, "holding/institutionIdentifier/typeOrSource/pointer"))
+      xpath_get_text(xpath_first(@doc, "institutionIdentifier/typeOrSource/pointer"))
     end
     
     def location
-      xpath_get_text(xpath_first(@doc, "holding/physicalLocation"))
+      xpath_get_text(xpath_first(@doc, "physicalLocation"))
     end
     
     def address
-      xpath_get_text(xpath_first(@doc, "holding/physicalAddress/text"))
+      xpath_get_text(xpath_first(@doc, "physicalAddress/text"))
     end
     
     def url
-      xpath_get_text(xpath_first(@doc, "holding/electronicAddress/text"))
+      xpath_get_text(xpath_first(@doc, "electronicAddress/text"))
     end
     
     def copies
-      "#{xpath_get_text(xpath_first(@doc, "holding/holdingSimple/copiesSummary/copiesCount"))}".to_i
+      "#{xpath_get_text(xpath_first(@doc, "holdingSimple/copiesSummary/copiesCount"))}".to_i
     end
   end
 end
