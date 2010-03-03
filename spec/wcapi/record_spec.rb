@@ -8,12 +8,24 @@ describe WCAPI::Record do
 
   context "using convenience methods" do
     it "#oclc_id" do
-      @record.oclc_id.should == '57358293'
+      @record.oclc_id.should == '8114241'
     end
 
     it "#leader" do
       @record.leader.should be_an_instance_of(WCAPI::Record::Leader)
-      @record.leader.raw.should == '00000    a2200000   4500'
+      @record.leader.raw.should == '99999cam a2200001 a 4500'
+    end
+
+    it "#publication_year" do
+      @record.publication_year.should == '1982'
+    end
+    
+    it "#type_of_record" do
+      @record.type_of_record.should == 'a'
+    end
+    
+    it "#bibliographic_level" do
+      @record.bibliographic_level.should == 'm'
     end
       
     it "#isbns" do
@@ -24,24 +36,24 @@ describe WCAPI::Record do
     end
     
     it "#isbns.to_s" do
-      @record.isbns.collect {|isbn| "#{isbn}"}.should == ["0439784549 (hardcover)", "9780439784542 (hardcover)", "0439786770 (reinforced lib. bdg.)", "9780439786775 (reinforced lib. bdg.)", "0439791324 (deluxe edition)", "9780439791328 (deluxe edition)", "0439785960 (pbk.)", "9780439785969 (pbk.)"]
+      @record.isbns.collect {|isbn| "#{isbn}"}.should == ["0393013456", "9780393013450", "0380641135 (pbk.)", "9780380641130 (pbk.)"]
     end
       
     it "#isbns.to_i" do
       @record.isbns.should be_an_instance_of(Array)
-      @record.isbns.collect {|isbn| "#{isbn.to_i}"}.should == ["0439784549", "9780439784542", "0439786770", "9780439786775", "0439791324", "9780439791328", "0439785960", "9780439785969"]
+      @record.isbns.collect {|isbn| "#{isbn.to_i}"}.should == ["0393013456", "9780393013450", "0380641135", "9780380641130"]
     end
     
     it "#title" do
-      @record.title.should == ['Harry Potter and the Half-Blood Prince /']
+      @record.title.should == ["The red badge of courage :", "an episode of the American Civil War /"]
     end
       
     it "#link" do
-      @record.link.should == 'http://www.worldcat.org/oclc/57358293'
+      @record.link.should == 'http://www.worldcat.org/oclc/8114241'
     end
 
     it "#authors" do
-      @record.authors.first.should eql("Rowling, J. K.")
+      @record.authors.first.should eql("Crane, Stephen,")
       
       # There's some issues here with character encoding, so I'm  ignoring this
       # 700 field for now.
@@ -49,10 +61,7 @@ describe WCAPI::Record do
     end
       
     it "#summary" do
-      @record.summary.should == "Sixth-year Hogwarts student Harry Potter " \
-        + "gains valuable insights into the boy Voldemort once was, even as " \
-        + "his own world is transformed by maturing friendships, schoolwork " \
-        + "assistance from an unexpected source, and devastating losses."
+      @record.summary.should == ''
     end
       
     it "#citation" do

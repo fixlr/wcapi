@@ -15,6 +15,18 @@ module WCAPI
       @leader ||= WCAPI::Record::Leader.new(xpath_get_text(xpath_first(@doc, "leader")))
     end
 
+    def type_of_record
+      "#{leader[3]}"
+    end
+
+    def bibliographic_level
+      "#{leader[4]}"
+    end
+
+    def publication_year
+      @pub_year ||= xpath_get_text(xpath_first(@doc, "controlfield[@tag='008']"))[7..10]
+    end
+
     def isbns
       unless @isbns
         @isbns = []
