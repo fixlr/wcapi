@@ -1,113 +1,107 @@
+<?xml version="1.0"?>
 <record xmlns="http://www.loc.gov/MARC21/slim">
-	<leader>00000    a2200000   4500</leader>
-	<controlfield tag="001">57358293</controlfield>
-	<controlfield tag="008">050125s2005    nyu                 eng  </controlfield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">0439784549 (hardcover)</subfield>
+	<leader>99999cam a2200001 a 4500cam   a </leader>
+	<controlfield tag="001">8114241</controlfield>
+	<controlfield tag="008">811217s1982    nyu      b    000 1 eng  </controlfield>
+	<datafield tag="010" ind1=" " ind2=" ">
+		<subfield code="a">   81022419 </subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">9780439784542 (hardcover)</subfield>
+	<datafield tag="040" ind1=" " ind2=" ">
+		<subfield code="a">DLC</subfield>
+		<subfield code="c">DLC</subfield>
+		<subfield code="d">OCO</subfield>
+		<subfield code="d">BAKER</subfield>
+		<subfield code="d">BTCTA</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">0439786770 (reinforced lib. bdg.)</subfield>
+	<datafield tag="019" ind1=" " ind2=" ">
+		<subfield code="a">10062795</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">9780439786775 (reinforced lib. bdg.)</subfield>
+	<datafield tag="020" ind1=" " ind2=" ">
+		<subfield code="a">0393013456</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">0439791324 (deluxe edition)</subfield>
+	<datafield tag="020" ind1=" " ind2=" ">
+		<subfield code="a">9780393013450</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">9780439791328 (deluxe edition)</subfield>
+	<datafield tag="020" ind1=" " ind2=" ">
+		<subfield code="a">0380641135 (pbk.)</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">0439785960 (pbk.)</subfield>
+	<datafield tag="020" ind1=" " ind2=" ">
+		<subfield code="a">9780380641130 (pbk.)</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="020">
-		<subfield code="a">9780439785969 (pbk.)</subfield>
+	<datafield tag="029" ind1="1" ind2=" ">
+		<subfield code="a">NLGGC</subfield>
+		<subfield code="b">820994235</subfield>
 	</datafield>
-	<datafield ind1="1" ind2=" " tag="100">
-		<subfield code="a">Rowling, J. K.</subfield>
+	<datafield tag="029" ind1="1" ind2=" ">
+		<subfield code="a">NZ1</subfield>
+		<subfield code="b">2635150</subfield>
 	</datafield>
-	<datafield ind1="1" ind2="0" tag="245">
-		<subfield code="a">Harry Potter and the Half-Blood Prince /</subfield>
-		<subfield code="c">by J.K. Rowling ; illustrations by Mary GrandPré.</subfield>
+	<datafield tag="043" ind1=" " ind2=" ">
+		<subfield code="a">n-us---</subfield>
+		<subfield code="a">n-us-va</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="260">
-		<subfield code="a">New York, NY :</subfield>
-		<subfield code="b">Arthur A. Levine Books,</subfield>
-		<subfield code="c">2005.</subfield>
+	<datafield tag="050" ind1="0" ind2="0">
+		<subfield code="a">PS1449.C85</subfield>
+		<subfield code="b">R3 1982</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="300">
-		<subfield code="a">x, 652 p. :</subfield>
-		<subfield code="b">ill. ;</subfield>
-		<subfield code="c">24 cm.</subfield>
+	<datafield tag="082" ind1="0" ind2="0">
+		<subfield code="a">813/.4</subfield>
+		<subfield code="2">19</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="500">
-		<subfield code="a">"Year 6"--Spine.</subfield>
+	<datafield tag="100" ind1="1" ind2=" ">
+		<subfield code="a">Crane, Stephen,</subfield>
+		<subfield code="d">1871-1900.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="500">
-		<subfield code="a">Sequel to: Harry Potter and the Order of the Phoenix.</subfield>
+	<datafield tag="245" ind1="1" ind2="4">
+		<subfield code="a">The red badge of courage :</subfield>
+		<subfield code="b">an episode of the American Civil War /</subfield>
+		<subfield code="c">Stephen Crane ; newly edited from Crane's original manuscript by Henry Binder.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="500">
-		<subfield code="a">Sequel: Harry Potter and the deathly hallows.</subfield>
+	<datafield tag="260" ind1=" " ind2=" ">
+		<subfield code="a">New York :</subfield>
+		<subfield code="b">Norton,</subfield>
+		<subfield code="c">c1982.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2=" " tag="520">
-		<subfield code="a">Sixth-year Hogwarts student Harry Potter gains valuable insights into the boy Voldemort once was, even as his own world is transformed by maturing friendships, schoolwork assistance from an unexpected source, and devastating losses.</subfield>
+	<datafield tag="300" ind1=" " ind2=" ">
+		<subfield code="a">ix, 173 p. ;</subfield>
+		<subfield code="c">22 cm.</subfield>
 	</datafield>
-	<datafield ind1="0" ind2=" " tag="505">
-		<subfield code="a">The other minister -- Spinner's end -- Will and won't -- Horace Slughorn -- An excess of phlegm -- Draco's detour -- The slug club -- Snape victorious -- The Half-Blood Prince -- The house of gaunt -- Hermione's helping hand -- Silver and opals -- The secret riddle -- Felix Felicis -- The unbreakable vow -- A very frosty Christmas -- A sluggish memory -- Birthday surprises -- Elf tails -- Lord Voldemort's request -- The unknownable room -- After the burial -- Horcruxes -- Sectumsempra -- The seer overheard -- The cave -- The lightning-struck tower -- Flight of the prince -- The Phoenix lament -- The white tomb.</subfield>
+	<datafield tag="504" ind1=" " ind2=" ">
+		<subfield code="a">Includes bibliographical references.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="1" tag="650">
-		<subfield code="a">Wizards</subfield>
+	<datafield tag="651" ind1=" " ind2="0">
+		<subfield code="a">Virginia</subfield>
+		<subfield code="x">History</subfield>
+		<subfield code="y">Civil War, 1861-1865</subfield>
 		<subfield code="v">Fiction.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="1" tag="650">
-		<subfield code="a">Magic</subfield>
+	<datafield tag="650" ind1=" " ind2="0">
+		<subfield code="a">Chancellorsville, Battle of, Chancellorsville, Va., 1863</subfield>
 		<subfield code="v">Fiction.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="1" tag="650">
-		<subfield code="a">Schools</subfield>
-		<subfield code="v">Fiction.</subfield>
-	</datafield>
-	<datafield ind1=" " ind2="1" tag="651">
-		<subfield code="a">England</subfield>
-		<subfield code="v">Fiction.</subfield>
-	</datafield>
-	<datafield ind1=" " ind2="7" tag="655">
-		<subfield code="a">Fantasy fiction.</subfield>
+	<datafield tag="655" ind1=" " ind2="7">
+		<subfield code="a">War stories.</subfield>
 		<subfield code="2">gsafd</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="7" tag="655">
-		<subfield code="a">Juvenile materials.</subfield>
-		<subfield code="2">local</subfield>
+	<datafield tag="655" ind1=" " ind2="7">
+		<subfield code="a">Historical fiction.</subfield>
+		<subfield code="2">gsafd</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="0" tag="650">
-		<subfield code="a">Potter, Harry (Fictitious character)</subfield>
-		<subfield code="v">Juvenile fiction.</subfield>
+	<datafield tag="700" ind1="1" ind2=" ">
+		<subfield code="a">Binder, Henry.</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="0" tag="650">
-		<subfield code="a">Hogwarts School of Witchcraft and Wizardry (Imaginary place)</subfield>
-		<subfield code="v">Juvenile fiction.</subfield>
+	<datafield tag="938" ind1=" " ind2=" ">
+		<subfield code="a">Baker &amp; Taylor</subfield>
+		<subfield code="b">BKTY</subfield>
+		<subfield code="c">14.95</subfield>
+		<subfield code="d">11.21</subfield>
+		<subfield code="i">0393013456</subfield>
+		<subfield code="n">0000579822</subfield>
+		<subfield code="s">active</subfield>
 	</datafield>
-	<datafield ind1=" " ind2="0" tag="650">
-		<subfield code="a">Wizards</subfield>
-		<subfield code="v">Juvenile fiction.</subfield>
-	</datafield>
-	<datafield ind1=" " ind2="0" tag="650">
-		<subfield code="a">Magic</subfield>
-		<subfield code="v">Juvenile fiction.</subfield>
-	</datafield>
-	<datafield ind1=" " ind2="0" tag="650">
-		<subfield code="a">Schools</subfield>
-		<subfield code="v">Juvenile fiction.</subfield>
-	</datafield>
-	<datafield ind1=" " ind2="0" tag="651">
-		<subfield code="a">England</subfield>
-		<subfield code="v">Juvenile fiction.</subfield>
-	</datafield>
-	<datafield ind1="1" ind2=" " tag="700">
-		<subfield code="a">GrandPré, Mary,</subfield>
-		<subfield code="e">ill.</subfield>
+	<datafield tag="938" ind1=" " ind2=" ">
+		<subfield code="a">Baker and Taylor</subfield>
+		<subfield code="b">BTCP</subfield>
+		<subfield code="n">81022419</subfield>
 	</datafield>
 </record>
