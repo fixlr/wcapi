@@ -15,6 +15,16 @@ module WCAPI
       @leader ||= WCAPI::Record::Leader.new(xpath_get_text(xpath_first(@doc, "leader")))
     end
 
+    def publication_year
+      @pub_year ||= xpath_get_text(xpath_first(@doc, "controlfield[@tag='008']"))[7..10]
+    end
+
+    def publisher
+      @publisher ||= xpath_all(@doc, "datafield[@tag='260']/subfield").collect {|subfield|
+        xpath_get_text(subfield)
+      }.join(' ')
+    end
+
     def type_of_record
       "#{leader[3]}"
     end
@@ -23,8 +33,16 @@ module WCAPI
       "#{leader[4]}"
     end
 
-    def publication_year
-      @pub_year ||= xpath_get_text(xpath_first(@doc, "controlfield[@tag='008']"))[7..10]
+    def description
+      @description ||= xpath_all(@doc, "datafield[@tag='300']/subfield").collect {|subfield|
+        xpath_get_text(subfield)
+      }.join(' ')
+    end
+
+    def subjects
+      @subjects ||= xpath_all(@doc, "datafield[@tag='650']/subfield[@code='a']").collect {|field|
+        xpath_get_text(field)
+      }
     end
 
     def isbns

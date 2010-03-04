@@ -19,7 +19,11 @@ describe WCAPI::Record do
     it "#publication_year" do
       @record.publication_year.should == '1982'
     end
-    
+
+    it "#publisher" do
+      @record.publisher.should == 'New York : Norton, c1982.'
+    end
+
     it "#type_of_record" do
       @record.type_of_record.should == 'a'
     end
@@ -28,6 +32,14 @@ describe WCAPI::Record do
       @record.bibliographic_level.should == 'm'
     end
       
+    it "#description" do
+      @record.description.should == 'ix, 173 p. ; 22 cm.'
+    end
+
+    it "#subjects" do
+      @record.subjects.should == ['Chancellorsville, Battle of, Chancellorsville, Va., 1863']
+    end
+
     it "#isbns" do
       @record.isbns.should be_an_instance_of(Array)
       @record.isbns.each do |isbn|
