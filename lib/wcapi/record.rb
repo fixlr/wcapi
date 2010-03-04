@@ -46,13 +46,9 @@ module WCAPI
     end
 
     def isbns
-      unless @isbns
-        @isbns = []
-        xpath_all(@doc, "datafield[@tag='020']/subfield[@code='a']").each do |i|
-          @isbns << WCAPI::Record::ISBN.new(xpath_get_text(i))
-        end
+      @isbns ||= xpath_all(@doc, "datafield[@tag='020']/subfield[@code='a']").collect do |i|
+        WCAPI::Record::ISBN.new(xpath_get_text(i))
       end
-      return @isbns
     end
 
     def link
@@ -60,52 +56,26 @@ module WCAPI
     end
 
     def title
-      unless @title
-        @title = []
-        xpath_all(@doc, "datafield[@tag='245']/subfield[@code='a']").each do |i|
-          @title << xpath_get_text(i)
-        end
-        xpath_all(@doc, "datafield[@tag='245']/subfield[@code='b']").each do |i|
-          @title << xpath_get_text(i)
-        end
+      @title ||= ['a', 'b'].collect do |code|
+        xpath_get_text(xpath_first(@doc, "datafield[@tag='245']/subfield[@code='#{code}']"))
       end
-      return @title
     end
     
     def authors
-      unless @authors
-        @authors = []
-        xpath_all(@doc, "datafield[@tag='100']/subfield[@code='a']").each do |i|
-          @authors << xpath_get_text(i)
-        end
-        xpath_all(@doc, "datafield[@tag='110']/subfield[@code='a']").each do |i|
-          @authors << xpath_get_text(i)
-        end
-        xpath_all(@doc, "datafield[@tag='111']/subfield[@code='a']").each do |i|
-          @authors << xpath_get_text(i)
-        end
-
-        xpath_all(@doc, "datafield[@tag='700']/subfield[@code='a']").each do |i|
-          @authors << xpath_get_text(i)
-        end
-        xpath_all(@doc, "datafield[@tag='710']/subfield[@code='a']").each do |i|
-          @authors << xpath_get_text(i)
-        end
-        xpath_all(@doc, "datafield[@tag='711']/subfield[@code='a']").each do |i|
-          @authors << xpath_get_text(i)
-        end
+      @authors ||= ['100', '110', '111', '700', '710', '711'].collect do |tag|
+        xpath_get_text(xpath_first(@doc, "datafield[@tag='#{tag}']/subfield[@code='a']"))
       end
-      return @authors
     end
 
     def summary
       unless @summary
-        if xpath_first(@doc, "datafield[@tag='520']") != nil
-          @summary = xpath_get_text(xpath_first(@doc, "datafield[@tag='520']/subfield[@code='a']"))
-        elsif xpath_first(@doc, "datafield[@tag='500']") != nil
-          @summary = xpath_get_text(xpath_first(@doc, "datafield[@tag='500']/subfield[@code='a']"))
-        else
-          @summary = ''
+        @summary ||= ''  # default empty string
+      
+        # Check for both 500 and 520, but give preference to the 520
+        ['500', '520'].each do |tag|
+          if xpath_first(@doc, "datafield[@tag='#{tag}']") != nil
+            @summary = xpath_get_text(xpath_first(@doc, "datafield[@tag='#{tag}']/subfield[@code='a']"))
+          end
         end
       end
       return @summary
